@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bastion: Coming soon.</title>
+    <style>
+        @font-face {
+            font-family: "normal";
+            src: url("../../../assets/fonts/normal.otf") format("opentype");
+        }
+        @font-face {
+            font-family: "title";
+            src: url("../../../assets/fonts/title.otf") format("opentype");
+        }
+        body {
+            color: white;
+            background-color: black;
+            margin: 0px;
+            padding: 0px;
+            font-family: "normal", sans-serif;
+            user-select: none;
+        }
+        .bastionLogo {
+            height: 512px;
+            width: 512px;
+            opacity: 0.25;
+            background-size: 512px;
+            background-image: url("assets/textures/bastion.png");
+            position: fixed;
+            top: calc(50% - 256px);
+            left: calc(50% - 256px);
+        }
+        .comingSoon {
+            width: 512px;
+            font-size: 64px;
+            top: calc(50% - 32px);
+            left: calc(50% - 256px);
+            height: 64px;
+            position: fixed;
+            text-align: center;
+            font-family: "title", sans-serif;
+        }
+        .socials {
+            position: fixed;
+            bottom: 0px;
+            text-align: center;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-bottom: 20px;
+        }
+        .background {
+            background: url("assets/textures/background.jpg");
+            position: fixed;
+            bottom: 0px;
+            width: 100%;
+            height: 100%;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            z-index: -100;
+            image-rendering: optimizeQuality;
+            background-position-y: bottom;
+        }
+        .links > *::before {
+            height: 32px;
+            width: 32px;
+            image-rendering: pixelated;
+            content: "";
+            display: inline-block;
+            margin-right: 6px;
+            position: relative;
+            top: 10px;
+            background-size: 32px;
+        }
+        .links > * {
+            display: inline-block;
+            cursor: pointer;
+            transition-duration: 1s;
+        }
+        .links > *:hover {
+            text-shadow: 0px 0px 16px white;
+        }
+        .links > * > a {
+            color: white;
+            text-decoration: none;
+        }
+        .wantUpdates {
+            color: white;
+        }
+        .youtube::after {
+            content: "";
+            height: 16px;
+            width: 3px;
+            background-color: white;
+            display: inline-block;
+            margin-left: 8px;
+            position: relative;
+            top: 2px;
+            cursor: default;
+        }
+        .twitter::after {
+            content: "";
+            height: 16px;
+            width: 3px;
+            background-color: white;
+            display: inline-block;
+            margin-left: 8px;
+            position: relative;
+            top: 2px;
+            cursor: default;
+        }
+        .youtube::before {
+            background-image: url("assets/textures/youtube.png");
+        }
+        .twitter::before {
+            background-image: url("assets/textures/twitter.png");
+        }
+        .github::before {
+            background-image: url("assets/textures/github.png");
+        }
+    </style>
+</head>
+    <div class="bastionLogo"></div>
+    <div class="comingSoon">Coming soon.</div>
+    <div class="socials">
+        <div class="wantUpdates">Want to see updates?</div>
+        <div class="links">
+            <div class="youtube"><a href="https://www.youtube.com/@Bastion_MC">YouTube</a></div>
+            <div class="twitter"><a href="https://www.twitter.com/Bastion_MC">Twitter</a></div>
+            <div class="github"><a href="https://www.github.com/BastionMC">GitHub</a></div>
+        </div>
+    </div>
+    <div class="background"></div>
+</body>
+</html>
