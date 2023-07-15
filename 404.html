@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bastion: Coming soon.</title>
+    <title>404 - Bastion</title>
     <link rel="icon" type="image/icon" href="assets/textures/favico.ico">
     <style>
         @font-face {
@@ -32,7 +32,7 @@
             top: calc(50% - 256px);
             left: calc(50% - 256px);
         }
-        .comingSoon {
+        .error {
             width: 512px;
             font-size: 64px;
             top: calc(50% - 32px);
@@ -41,6 +41,16 @@
             position: fixed;
             text-align: center;
             font-family: "title", sans-serif;
+        }
+        .error {
+            width: 1024px;
+            font-size: 32px;
+            top: calc(50% - 16px + 96px);
+            left: calc(50% - 512px);
+            height: 32px;
+            position: fixed;
+            text-align: center;
+            font-family: "normal", sans-serif;
         }
         .socials {
             position: fixed;
@@ -122,7 +132,8 @@
     </style>
 </head>
     <div class="bastionLogo"></div>
-    <div class="comingSoon">Error 404. Page Not Found.</div>
+    <div class="error">Error 404</div>
+    <div class="errorDescription">Page not found.</div>
     <div class="socials">
         <div class="wantUpdates">Want to see updates?</div>
         <div class="links">
