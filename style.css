@@ -88,18 +88,17 @@ body {
 .links > * {
     display: inline-block;
     cursor: pointer;
-    /*transition-duration: 1s;*/
-    transition: .35s ease-in-out;
+    transition-duration: 1s;
+    position: relative;
+    bottom: 0px;
 }
 .links > *:hover {
-    text-shadow: 0px 0px 16px white;
-    transform: translateY(-5px);
-    transition: .35s ease-in;
+    text-shadow: 0px 0px 16px white, 0px 0px 16px white, 0px 0px 16px white, 0px 0px 16px white;
+    bottom: 8px;
 }
-.links > *:hover::after{
-    position: relative;
-    top: 7px;
-    transition: .35s ease-in;
+.links > *:hover::after {
+    top: 10px;
+    transition-duration: 1s;
 }
 .links > * > a {
     color: white;
