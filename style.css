@@ -98,7 +98,6 @@ body {
 }
 .links > *:hover::after {
     top: 10px;
-    transition-duration: 1s;
 }
 .links > * > a {
     color: white;
@@ -117,6 +116,7 @@ body {
     position: relative;
     top: 2px;
     cursor: default;
+    transition-duration: 1s;
 }
 .twitter::after {
     content: "";
@@ -128,6 +128,7 @@ body {
     position: relative;
     top: 2px;
     cursor: default;
+    transition-duration: 1s;
 }
 .youtube::before {
     background-image: url("assets/textures/youtube.png");
