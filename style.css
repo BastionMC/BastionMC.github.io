@@ -98,8 +98,8 @@ body {
 }
 .links > *:hover::after{
     position: relative;
-    top: 6.5px;
-    transition: .365s ease-in-out;
+    top: 7px;
+    transition: .35s ease-in;
 }
 .links > * > a {
     color: white;
@@ -118,9 +118,6 @@ body {
     position: relative;
     top: 2px;
     cursor: default;
-}
-.youtube:hover::after {
-    transform: none;
 }
 .twitter::after {
     content: "";
