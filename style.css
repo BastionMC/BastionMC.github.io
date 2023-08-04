@@ -88,7 +88,7 @@ body {
 .links > * {
     display: inline-block;
     cursor: pointer;
-    transition-duration: 1s;
+    transition-duration: 0.350s;
     position: relative;
     bottom: 0px;
 }
@@ -116,7 +116,7 @@ body {
     position: relative;
     top: 2px;
     cursor: default;
-    transition-duration: 1s;
+    transition-duration: 0.350s;
 }
 .twitter::after {
     content: "";
@@ -128,7 +128,7 @@ body {
     position: relative;
     top: 2px;
     cursor: default;
-    transition-duration: 1s;
+    transition-duration: 0.350s;
 }
 .youtube::before {
     background-image: url("assets/textures/youtube.png");
