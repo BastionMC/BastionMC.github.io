@@ -131,6 +131,18 @@ body {
     cursor: default;
     transition-duration: 0.350s;
 }
+.github::after {
+    content: "";
+    height: 16px;
+    width: 3px;
+    background-color: white;
+    display: inline-block;
+    margin-left: 8px;
+    position: relative;
+    top: 2px;
+    cursor: default;
+    transition-duration: 0.350s;
+}
 .youtube::before {
     background-image: url("assets/textures/youtube.png");
 }
@@ -139,4 +151,7 @@ body {
 }
 .github::before {
     background-image: url("assets/textures/github.png");
+}
+.discord::before {
+    background-image: url("assets/textures/discord.png");
 }
