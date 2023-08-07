@@ -155,3 +155,50 @@ body {
 .discord::before {
     background-image: url("assets/textures/discord.png");
 }
+.disclaimer {
+    position: fixed;
+    top: 16px;
+    text-align: center;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.5;
+}
+
+@media only screen and (max-width: 768px) {
+    .disclaimer {
+        width: calc(100% - 32px);
+    }
+    .bastionLogo {
+        height: 256px;
+        width: 256px;
+        opacity: 0.25;
+        background-size: 256px;
+        background-image: url("assets/textures/bastion.png");
+        position: fixed;
+        top: calc(50% - 128px);
+        left: calc(50% - 128px);
+    }
+    .comingSoon {
+        top: calc(50% - 16px);
+        font-size: 32px;
+    }
+    .socials {
+        width: 100%;
+    }
+    .links > *, .links > *:hover {
+        height: 35px;
+        bottom: 0px;
+    }
+    .links > *:hover::after {
+        top: 2px;
+    }
+    .twitter::after {
+        display: none;
+    }
+    .links {
+        width: 300px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+}
