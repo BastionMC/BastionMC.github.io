@@ -168,6 +168,8 @@ body {
 @media only screen and (max-width: 768px) {
     .disclaimer {
         width: calc(100% - 32px);
+        font-size: 95%;
+        opacity: 30%;
     }
     .bastionLogo {
         height: 256px;
