@@ -148,6 +148,8 @@ body {
 }
 .twitter::before {
     background-image: url("assets/textures/twitter.png");
+    width: 80px;
+    background-size: 80px
 }
 .github::before {
     background-image: url("assets/textures/github.png");
@@ -165,7 +167,7 @@ body {
     opacity: 0.5;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
     .disclaimer {
         width: calc(100% - 32px);
         font-size: 95%;
