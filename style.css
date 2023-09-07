@@ -206,3 +206,29 @@ body {
         transform: translateX(-50%);
     }
 }
+.discord_iframe {
+    opacity: 0;
+    transition-duration: 1s;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(calc(-50% - 20px));
+    z-index: 621;
+}
+body:has(.socials > .links > .discord:hover) > .discord_iframe {
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 1;
+}
+.github_iframe {
+    opacity: 0;
+    transition-duration: 1s;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(calc(-50% - 20px));
+    z-index: 621;
+}
+body:has(.socials > .links > .github:hover) > .github_iframe {
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 1;
+}
