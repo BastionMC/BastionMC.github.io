@@ -107,31 +107,10 @@ body {
 .wantUpdates {
     color: white;
 }
-.youtube::after {
-    content: "";
-    height: 16px;
-    width: 3px;
-    background-color: white;
-    display: inline-block;
-    margin-left: 8px;
-    position: relative;
-    top: 2px;
-    cursor: default;
-    transition-duration: 0.350s;
-}
-.twitter::after {
-    content: "";
-    height: 16px;
-    width: 3px;
-    background-color: white;
-    display: inline-block;
-    margin-left: 8px;
-    position: relative;
-    top: 2px;
-    cursor: default;
-    transition-duration: 0.350s;
-}
-.github::after {
+.youtube::after,
+.twitter::after,
+.github::after,
+.discord::after {
     content: "";
     height: 16px;
     width: 3px;
@@ -156,6 +135,9 @@ body {
 }
 .discord::before {
     background-image: url("assets/textures/discord.png");
+}
+.tumblr::before {
+    background-image: url("assets/textures/tumblr.png");
 }
 .disclaimer {
     position: fixed;
@@ -197,7 +179,8 @@ body {
     .links > *:hover::after {
         top: 2px;
     }
-    .twitter::after {
+    .twitter::after,
+    .discord::after {
         display: none;
     }
     .links {
