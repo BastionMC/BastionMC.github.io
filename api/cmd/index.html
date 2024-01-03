@@ -77,6 +77,16 @@
             box-shadow: 0px 2px gray;
             font-size: 12px;
             color: dimgray;
+            user-select: none;
+        }
+        kbd:active {
+            box-shadow: none;
+            bottom: 0px;
+            background-color: gray;
+            background: none;
+        }
+        kbd:hover {
+            cursor: pointer;
         }
         #last-updated {
             text-align: center;
@@ -99,7 +109,7 @@
         @media (prefers-color-scheme: dark) {
             body {
                 filter: hue-rotate(180deg) invert();
-                background-color: black;
+                background-color: rgb(22, 22, 22);
             }
             kbd {
                 padding: 2px;
@@ -109,12 +119,19 @@
                 background: linear-gradient(lightgray, gainsboro);
                 position: relative;
                 bottom: 2px;
-                box-shadow: 0px 2px rgb(230, 230, 230);
+                box-shadow: 0px 3px rgb(225, 225, 225);
                 font-size: 12px;
                 color: dimgray;
             }
             #api-logo {
                 filter: invert() drop-shadow(white);
+            }
+            * {
+                text-shadow: 0.5px 0px;
+            }
+            kbd:active {
+                bottom: -1px;
+                background-color: rgb(225, 225, 225);
             }
         }
     </style>
